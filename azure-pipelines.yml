@@ -10,10 +10,11 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'ubuntu1604qt:$(build.buildId)'
+  imageName: 'qt:$(build.buildId)'
 
 steps:
 - script: cp 16.04/Dockerfile .
   displayName: cp file
 - script: docker build -f Dockerfile -t $(imageName) .
   displayName: docker build
+  timeoutInMinutes: 360

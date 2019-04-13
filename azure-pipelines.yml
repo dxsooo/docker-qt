@@ -14,4 +14,6 @@ variables:
 
 steps:
 - script: cp 16.04/Dockerfile .
+  displayName: cp file
 - script: docker build -f Dockerfile -t $(imageName) .
+  displayName: docker build

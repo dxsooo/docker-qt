@@ -17,4 +17,5 @@ steps:
   displayName: cp file
 - script: docker build -f Dockerfile -t $(imageName) .
   displayName: docker build
-  timeoutInMinutes: 360
+
+timeoutInMinutes: 360

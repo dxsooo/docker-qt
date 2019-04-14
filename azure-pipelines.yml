@@ -6,16 +6,18 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'Ubuntu-16.04'
+jobs:
+- job: ubuntu1604
+  pool:
+    vmImage: 'Ubuntu-16.04'
 
-variables:
-  imageName: 'qt:$(build.buildId)'
+  variables:
+    imageName: 'qt:$(build.buildId)'
 
-steps:
-- script: cp 16.04/Dockerfile .
-  displayName: cp file
-- script: docker build -f Dockerfile -t $(imageName) .
-  displayName: docker build
+  steps:
+  - script: cp 16.04/Dockerfile .
+    displayName: cp file
+  - script: docker build -f Dockerfile -t $(imageName) .
+    displayName: docker build
 
-timeoutInMinutes: 360
+  timeoutInMinutes: 360

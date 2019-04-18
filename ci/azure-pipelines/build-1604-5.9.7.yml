@@ -7,12 +7,12 @@ trigger:
 - master
 
 jobs:
-- job: ubuntu1604_qt5_9_7
+- job: ubuntu1604
   pool:
     vmImage: 'Ubuntu-16.04'
 
   variables:
-    imageName: 'qt:ubuntu1604-5.9.7-$(build.buildId)'
+    imageName: 'qt:1604-5.9.7-$(build.buildId)'
 
   steps:
   - script: cp 16.04/5.9.7/Dockerfile .

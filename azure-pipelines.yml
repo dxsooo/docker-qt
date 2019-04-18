@@ -7,7 +7,7 @@ trigger:
 - master
 
 jobs:
-- job: ubuntu1604-5.9.7
+- job: ubuntu1604_qt5_9_7
   pool:
     vmImage: 'Ubuntu-16.04'
 

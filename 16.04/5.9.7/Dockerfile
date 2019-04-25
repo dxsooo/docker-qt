@@ -6,7 +6,7 @@ ENV QT_VERSION 5.9.7
 RUN apt-get -qq update && \
     apt-get install -qqy build-essential perl python python-pip git cmake wget && \
     apt-get install -qqy '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxt-dev && \
-    apt-get install -qqy libssl1.0-dev libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev libdbus-1-dev libfontconfig1-dev libcap-dev libxtst-dev libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libxss-dev libegl1-mesa-dev gperf bison && \
+    apt-get install -qqy libssl-dev libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev libdbus-1-dev libfontconfig1-dev libcap-dev libxtst-dev libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libxss-dev libegl1-mesa-dev gperf bison && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

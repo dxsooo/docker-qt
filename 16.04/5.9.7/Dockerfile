@@ -12,7 +12,7 @@ RUN apt-get -qq update && \
 
 # clone & build Qt
 RUN git clone https://code.qt.io/qt/qt5.git && cd qt5 && git checkout v$QT_VERSION && \
-    ./init-repository --module-subset=default,-qtwebengine,-qtcharts,-qtdatavis3d,-qtpurchasing,-qtvirtualkeyboard,-qtnetworkauth,-qtremoteobjects,-qtscript,-qtspeech,-qtandroidextras,-qtmacextras,-qtwinextras,-qtactiveqt && \
+    ./init-repository --module-subset=default,-qtwebengine,-qtdatavis3d,-qtpurchasing,-qtvirtualkeyboard,-qtnetworkauth,-qtremoteobjects,-qtscript,-qtspeech,-qtandroidextras,-qtmacextras,-qtwinextras,-qtactiveqt && \
     mkdir qt5-build && cd qt5-build && \
     ../configure -opensource -nomake examples -nomake tests -confirm-license && \
     make -j8 && make install && \

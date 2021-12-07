@@ -8,9 +8,6 @@ See the [Docker Hub page](https://hub.docker.com/r/dxsooo/qt) for the full readm
 
 | Ubuntu Version | Qt Version | Build Status |
 |:---:|:---:|:-----:|
-| 16.04 |5.9.7|[![Build Status](https://dev.azure.com/zeohandxs/docker-qt/_apis/build/status/1604-5.9.7?branchName=master)](https://dev.azure.com/zeohandxs/docker-qt/_build/latest?definitionId=3&branchName=master)|
-| 16.04 |5.9.8|[![Build Status](https://dev.azure.com/zeohandxs/docker-qt/_apis/build/status/1604-5.9.8?branchName=master)](https://dev.azure.com/zeohandxs/docker-qt/_build/latest?definitionId=4&branchName=master)|
-|18.04|5.9.8|[![Build Status](https://dev.azure.com/zeohandxs/docker-qt/_apis/build/status/1804-5.9.8?branchName=master)](https://dev.azure.com/zeohandxs/docker-qt/_build/latest?definitionId=5&branchName=master)|
 |18.04|5.9.9|[![Build Status](https://dev.azure.com/zeohandxs/docker-qt/_apis/build/status/1804-5.9.9?branchName=master)](https://dev.azure.com/zeohandxs/docker-qt/_build/latest?definitionId=6&branchName=master)|
 |18.04|5.12.7| Not Ready |
 |20.04|5.12.7| Not Ready |

@@ -7,12 +7,12 @@ trigger:
 - master
 
 jobs:
-- job: docker-build
+- job: docker_build
   pool:
     vmImage: 'ubuntu-latest'
 
   variables:
-    imageName: 'qt:5.9.9-ubuntu1804-$(build.buildId)'
+    imageName: 'qt:5.9.9-ubuntu18.04-$(build.buildId)'
 
   steps:
   - script: docker build -f 18.04/5.9.9/Dockerfile -t $(imageName) .

@@ -5,7 +5,7 @@ Docker file collection for building Qt images based on **Ubuntu**, in order to c
 See the [Docker Hub page](https://hub.docker.com/r/dxsooo/qt) for the full readme on how to use this Docker image.
 
 ***
-The project only concerns on LTS versions for both Ubuntu and Qt Opensource
+The project only concerns on LTS versions for both Ubuntu and Qt opensource
 
 | Ubuntu Version | Qt Version | Build Status |
 |:---:|:---:|:-----:|

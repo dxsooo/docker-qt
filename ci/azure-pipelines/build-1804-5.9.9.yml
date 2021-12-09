@@ -16,6 +16,6 @@ jobs:
 
   steps:
   - script: docker build -f 18.04/5.9.9/Dockerfile -t $(imageName) .
-    displayName: build
+    displayName: Build
 
   timeoutInMinutes: 360

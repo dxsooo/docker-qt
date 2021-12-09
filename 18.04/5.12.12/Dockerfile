@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ENV QT_VERSION 5.9.9
+ENV QT_VERSION 5.12.12
 
 # base
 RUN apt-get -qq update && \
